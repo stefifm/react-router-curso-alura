@@ -7,6 +7,7 @@ import Sobre from './pages/Sobre'
 import Page404 from './pages/Page404'
 import Header from './components/Header/Header'
 import Post from './pages/Post'
+import Categoria from './pages/Categoria'
 
 function App() {
   return (
@@ -24,6 +25,10 @@ function App() {
         <Route
           path='/posts/:id'
           element={<Post />}
+        />
+        <Route
+          path='/categoria/:id/*'
+          element={<Categoria />}
         />
         <Route
           path='*'
