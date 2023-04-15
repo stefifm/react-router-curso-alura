@@ -1,5 +1,6 @@
 import image from '../../assets/img/doguito.svg'
 import '../../assets/css/componentes/header.css'
+import { Link } from 'react-router-dom'
 
 function Header() {
   return (
@@ -8,8 +9,8 @@ function Header() {
         <span className='menu-hamburguer__icon'></span>
       </div>
       <div className='header-container'>
-        <a
-          href='/'
+        <Link
+          to='/'
           className='flex flex--center'>
           <img
             className='header__logo'
@@ -17,37 +18,37 @@ function Header() {
             alt='doguito'
           />
           <h1 className='header__title'>Petshop</h1>
-        </a>
+        </Link>
       </div>
       <nav className='menu-header'>
         <ul className='menu-items'>
           <li>
-            <a
+            <Link
               className='menu-item menu-item--entrar'
-              href='#'>
+              to='#'>
               Entrar
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className='menu-item'
-              href='#'>
+              to='#'>
               Productos
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className='menu-item'
-              href='/'>
+              to='/'>
               Blog
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className='menu-item'
-              href='/sobre'>
+              to='/sobre'>
               Sobre
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
