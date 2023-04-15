@@ -5,10 +5,12 @@ import './assets/css/componentes/card.css'
 import Home from './pages/Home'
 import Sobre from './pages/Sobre'
 import Page404 from './pages/Page404'
+import Header from './components/Header/Header'
 
 function App() {
   return (
     <Router>
+      <Header />
       <Routes>
         <Route
           path='/'
